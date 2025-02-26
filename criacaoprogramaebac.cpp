@@ -128,7 +128,8 @@ int main ()
 			printf("Escolha a opção desejada do MENU:\n\n");
 			printf("\t 1 - Cadastrar nomes\n");
 			printf("\t 2 - Consultar nomes\n");
-			printf("\t 3 - Deletar nomes\n\n");
+			printf("\t 3 - Deletar nomes\n");
+			printf("\t 4 - sair do sistema\n\n");
 			printf("Opção: "); //mensagem para digitar qual a opção
 		
 			scanf("%d", &opcao);  //scanf tem por objetivo scanea o que o usuário coloca e armazena o valor "%d" tem por objetivo armazenar a opção
@@ -148,6 +149,11 @@ int main ()
 				case 3:
 				deleta();
 				break;
+				
+				case 4:
+				printf("Obrigado por utilizar o sistema!");
+				return 0;
+				break;	
 					
 				default:				
 				printf("Essa opção não está disponível!");
